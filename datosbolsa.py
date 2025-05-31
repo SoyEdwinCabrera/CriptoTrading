@@ -2,12 +2,12 @@ import yfinance as yf
 import pandas as pd
 import json, requests
 
-def sp500():
-    sp500df = yf.Ticker("^SPX").history(period="1y")
-    sp500df.to_csv('sp500.csv', encoding='utf-8')
-    print(sp500df)
+def Gold():
+    gold = yf.Ticker("GC=F").history(period="1y")
+    gold.to_csv('GOLD.csv', encoding='utf-8')
+    print(gold)
     print("Extration finished sp500 😀")
-sp500()
+Gold()
 
 url = "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD"
 response = requests.get(url)
