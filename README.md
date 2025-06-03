@@ -18,6 +18,31 @@ Para que este proyecto funcione, utilizamos las siguientes herramientas y biblio
 4. **dotenv**: Para manejar las claves API de forma segura.
 5. **os**: Para interactuar con las variables de entorno.
 6. **datetime**: Para manejar fechas y rangos temporales.
+7. **mplfinance**: Para graficar velas japonesas y volúmenes.
+8. **yfinance**: Para extraer datos de activos como el oro.
+9. **numpy**: Para cálculos matemáticos avanzados.
+10. **python-binance**: La biblioteca principal para interactuar con la API de Binance.
+
+---
+## Funcionalidades Principales
+
+### **1. Extracción de Datos**
+El archivo `criptos.py` permite extraer datos históricos y actuales de criptomonedas utilizando la API de Binance. Los datos se estructuran en un DataFrame y se guardan en archivos CSV para su análisis posterior.
+
+### **2. Análisis Técnico**
+El archivo `moving_averages.py` calcula medias móviles, niveles de soporte y resistencia, y genera señales de compra, venta o mantenimiento basadas en el último precio.
+
+### **3. Correlaciones entre Activos**
+El archivo `correlations.py` calcula la correlación entre activos como el S&P 500 y el oro, asignando una puntuación basada en el nivel de correlación.
+
+### **4. Simulación de Órdenes**
+El archivo `ordenes.py` incluye una simulación de órdenes de compra y venta utilizando la API de Binance. Por ejemplo, se calcula cuánto Ethereum se puede comprar con $100 y se crea una orden de prueba.
+
+### **5. Datos de Activos Tradicionales**
+El archivo `datosbolsa.py` utiliza `yfinance` para extraer datos de activos como el oro y los índices bursátiles, ampliando el alcance del proyecto más allá de las criptomonedas.
+
+---
+
 
 ## Paso a Paso: Cómo Creamos el Proyecto
 
@@ -79,4 +104,4 @@ python criptos.py
 
 ## Conclusión
 
-**CryptoTrading** es más que un proyecto; es una herramienta poderosa para explorar el mundo de las criptomonedas. Ya seas un analista buscando tendencias o un trader buscando datos históricos, este proyecto está diseñado para simplificar tu trabajo y ayudarte a tomar decisiones informadas. ¡Únete a nosotros en esta aventura cripto y descubre el poder de los datos!
+**CryptoTrading** es más que un proyecto; es una herramienta poderosa para explorar el mundo de las criptomonedas y otros activos financieros. Ya seas un analista buscando tendencias, un trader buscando señales de compra/venta, o simplemente un entusiasta de los datos, este proyecto está diseñado para simplificar tu trabajo y ayudarte a tomar decisiones informadas. ¡Únete a nosotros en esta aventura cripto y descubre el poder de los datos!
